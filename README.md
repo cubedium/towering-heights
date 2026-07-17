@@ -8,10 +8,6 @@ Towering Heights is a GBA game made for the [2026 GBA Jam](https://itch.io/jam/g
 Towering Heights uses my own gba library, gma. You can find more details about this in `src/gma/README.md`
 
 ## Todo
-#### key
-[x] = complete
-[ ] = incomplete
-
  - [ ] make gma have graphics 
    - [x] make gma draw pixels
    - [x] make gma fill screen
