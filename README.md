@@ -15,3 +15,5 @@ Towering Heights uses my own gba library, gma. You can find more details about t
    - [x] make gma draw rectangles
    - [ ] make gma draw lines
    - [ ] make gma draw circles
+ - [ ] make gma have sound
+ - [ ] make gma have input
