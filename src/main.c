@@ -14,6 +14,7 @@ int main(void)
 	gma_drawPixel(2, 1, CYAN);
 	gma_drawPixel(3, 1, BLACK);
 	gma_drawRect(4,4,4,4, gma_color(0,31,0));
+	gma_drawLine(0, 2, 4, 4, gma_color(31,31,0));
 
 	gma_display();
 

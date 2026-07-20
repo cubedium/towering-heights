@@ -2,6 +2,9 @@
 #define GMA
 
 /** TYPE DEFINITIONS **/
+typedef char   i8;
+typedef short i16;
+typedef int   i32;
 typedef unsigned char   u8;
 typedef unsigned short u16;
 typedef unsigned int   u32;
@@ -97,6 +100,22 @@ static inline void gma_drawRect(u8 x, u8 y, u8 w, u8 h, u16 color)
 		{
 			gma_drawPixel(x+xx, y+yy, color);
 		}
+	}
+}
+
+static inline void gma_drawLine(u8 x1, u8 y1, u8 x2, u8 y2, u16 color)
+{
+	/* traverser*/
+	i16 tx = x1 * 16;
+	i16 ty = y1 * 16;
+
+	/* movement */
+	i16 mx = x2 - x1;
+	i16 my = y2 - y1;
+
+	while (tx/16!=x2-1&&ty/16!=y2)
+	{
+		gma_drawPixel((tx+=mx)/16, (ty+=my)/16, color);		
 	}
 }
 
